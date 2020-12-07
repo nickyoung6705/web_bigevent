@@ -33,8 +33,7 @@ function renderAvatar(data) {
         $('#headPhoto img').attr('src',data.user_pic).show()
         $('#headPhoto #headp').hide()
     } else {
-        $('#headPhoto #headp').html(name[0]).show()
+        $('#headPhoto #headp').html(name[0].toUpperCase()).show()
         $('#headPhoto img').hide()
     }
-    
 }
